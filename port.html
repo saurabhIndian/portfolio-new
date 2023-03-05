@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lobster&family=Mochiy+Pop+P+One&family=Oswald:wght@300&family=Petemoss&family=Roboto+Slab:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Blog site</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: hsl(180, 37%, 16%);
+            font-family:sans-serif;
+        }
+
+        .card-body ul li a {
+            text-decoration: none;
+            color:rgb(233, 233, 233);
+            margin: 0 1em;
+        }
+
+        .card {
+            box-shadow: 10px 5px;
+            transition: all 5s ease-in;
+            cursor: nesw-resize;
+        }
+
+        .card:hover {
+            transform: rotate(2deg);
+        }
+
+        .header {
+            background: #3b1220;
+            height: 3em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-head {
+            display: block;
+            flex-basis: 50%;
+        }
+
+        .card-body {
+            margin: auto;
+
+        }
+
+        .card-body ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+        }
+
+        .card {
+            background-color:whitesmoke;
+            padding: 1em;
+        }
+
+        h2 span {
+            color: rgba(10, 229, 163, 0.925);
+            margin-left: 7%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h4 {
+            padding-left: 40px;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+        }
+
+        .card {
+            margin: 50px 0px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .left-content {
+            flex-basis: 70%;
+            margin: 0px 10px;
+        }
+
+        .right-content {
+            flex-basis: 30%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .right-sticky {
+            position: sticky;
+            top: 15em;
+            padding: 1em;
+        }
+
+        .footerSection {
+            background: #000000;
+        }
+
+        .footer-row {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .footer-div-1,
+        .footer-div-2,
+        .footer-div-3 {
+            flex-basis: 33%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 5em;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-content h3 {
+            color: #ffffff;
+        }
+
+        .footer-container p {
+            color: #ffffff;
+        }
+
+        #animate {
+
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            height: 150px;
+            width: 20vw;
+            background-color:rgb(153, 65, 65);
+            transition: all 10s ease-in;
+            margin-bottom: 60px;
+            cursor:pointer;
+            opacity:2;
+
+
+        }
+
+        #animate:hover {
+            left: 100vw;
+        }
+
+        @media screen and (max-width: 850px) {
+            .header {
+                display: none;
+            }
+
+            body {
+                background-color: rgb(26, 23, 199);
+            }
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="card-head">
+            <h2><span>Saurabh's</span>
+                <span style="color:yellow;">Portfolio</span>
+            </h2>
+        </div>
+        <div class="card-body">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Menu </a></li>
+            </ul>
+        </div>
+
+
+    </div>
+    <div class="container">
+        <div class="left-content">
+            <div class="card">
+                <h4>Iron-Man Team</h4>
+                <hr>
+                <img
+                    src="https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse similique sequi beatae error maiores
+                    quas nostrum repellat? Nostrum, excepturi magni, illum vel voluptatum ducimus quibusdam, dignissimos
+                    exercitationem ex obcaecati distinctio?
+                    Saepe in nam eos velit incidunt modi fugiat harum vitae sed expedita deserunt numquam recusandae,
+                    cupiditate esse alias possimus pariatur neque distinctio, libero reprehenderit corporis quas
+                    consequuntur maxime! Repudiandae, nisi.</p>
+            </div>
+            <div class="card">
+                <h4>Saurabh Front-End Developer</h4>
+                <hr>
+                <img src="img/smrt.jpg">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse similique sequi beatae error maiores
+                    quas nostrum repellat? Nostrum, excepturi magni, illum vel voluptatum ducimus quibusdam, dignissimos
+                    exercitationem ex obcaecati distinctio?
+                    Saepe in nam eos velit incidunt modi fugiat harum vitae sed expedita deserunt numquam recusandae,
+                    cupiditate esse alias possimus pariatur neque distinctio, libero reprehenderit corporis quas
+                    consequuntur maxime! Repudiandae, nisi.</p>
+                </div>
+                <div class="card">
+                <h4>Design</h4>
+                <hr>
+                <img src="https://images.pexels.com/photos/1102797/pexels-photo-1102797.png?auto=compress&cs=tinysrgb&w=600&lazy=load">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse similique sequi beatae error maiores
+                    quas nostrum repellat? Nostrum, excepturi magni, illum vel voluptatum ducimus quibusdam, dignissimos
+                    exercitationem ex obcaecati distinctio?
+                    Saepe in nam eos velit incidunt modi fugiat harum vitae sed expedita deserunt numquam recusandae,
+                    cupiditate esse alias possimus pariatur neque distinctio, libero reprehenderit corporis quas
+                     consequuntur maxime! Repudiandae, nisi.</p>
+            </div>
+            <div class="card">
+                <h4>Web developer</h4>
+                <hr>
+                <img
+                    src="https://images.pexels.com/photos/5366225/pexels-photo-5366225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse similique sequi beatae error maiores
+                    quas nostrum repellat? Nostrum, excepturi magni, illum vel voluptatum ducimus quibusdam, dignissimos
+                    exercitationem ex obcaecati distinctio?
+                    Saepe in nam eos velit incidunt modi fugiat harum vitae sed expedita deserunt numquam recusandae,
+                    cupiditate esse alias possimus pariatur neque distinctio, libero reprehenderit corporis quas
+                    consequuntur maxime! Repudiandae, nisi.</p>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="card">
+                <h4>About me</h4>
+                <h3>Hey There!!</h3>
+                <h1>I Am Saurabh Verma</h1>
+                <h5>Front-End Developer</h5>
+                <p class="intro"> </p>
+                <p><b> Thank you for giving me this opportunity to introduce my self my name is saurabh verma i have
+                        basically from faizabad but currently staying in Lucknow i have completed BCA course form Dr Ram
+                        Manohar Lohia Avadh University Faizabad in 2021 i am pursuing mca form MUIT Lucknow i have six
+                        month experience in a3 global marketting as a counsellor my strength is to i am self motivated
+                       hard working and a deciplined person my short terms goal is to get a job in a reputed company my long term
+                        goals is to achieve a good position where i can build my career as well as organization to my
+                        weakness is to i feel uncomfortable untill i finished my work and my hobbies are playing and
+                        listening to music i like to learn about New Technology.
+                        That's all about me thank you .</b></p>
+            </div>
+            <div class="card right-sticky">
+                <h5><b>Sections</b></h5>
+                <ul>
+                    <li>Programming</li>
+                    <li>Travel</li>
+                    <li>Music & Lifestyle</li>
+                    <li>Daily Running</li>
+                    <li>Meditation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footerSection " id="footerid">
+        <div class=" footer-container">
+            <div class="footer-row">
+                <div class=" footer-div-1">
+                    <div class="footer-content">
+                        <p>A web page where you can write your frontend code like HTML,CSS and JAVASCRIPT and get the
+                            realtime output of your code:</p>
+                            <br><br>
+                            <a href="www.linkedin.com/in/saurabh-verma-110588221">www.linkedIn.com</a>
+                            <a href="https://github.com/saurabhIndian">Github</a> 
+                    </div>
+                </div>
+
+                <div class=" footer-div-2">
+                    <div class="footer-content"><br><br>
+                        <h3 class="mt-5">NAVIGATION LINKS</h3><br>
+                        <li><a href="#topheader">HOME</a></li><br>
+                        <li><a href="contact.html">CONTACT</a></li><br>
+                        <li><a href="#">HELP</a></li><br><br><br><br>
+                    </div>
+                </div>
+                <div class=" footer-div-3">
+                    <div class="footer-content">
+                        <h3 class="mt-5">CONTRIBUTOR</h3>
+                        <br>
+                        <p >SAURABH.V</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>All copyrights @ Reserved by Saurabh Verma</p>
+            </div>
+        </div>
+        <div id="animate">
+        <h1>Welcome to Saurabh Front-End Developer Portfolio</h1>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
